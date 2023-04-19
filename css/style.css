@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
+
+/* Reset */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* My CSS */
+
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: "MedievalSharp", cursive;
+
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  justify-items: center;
+  gap: 1rem;
+}
+
+header {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-size: 3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  grid-column: 2/3;
+  width: 100%;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  margin-right: 0.5rem;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3);
+}
+
+button[type="submit"] {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3);
+}
+
+#seraphina {
+  width: 70%;
+  grid-column: 2/3;
+}
+
+#answer {
+  grid-column: 1/4;
+  font-size: 2rem;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Magic 8 Ball</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Lair of Sorceress Seraphina</h1>
+    </header>
+    <picture id="seraphina">
+      <img src="/static/seraphina.png" alt="Image of Sorceress" srcset="" />
+    </picture>
+    <form id="eight-form">
+      <label for="question">Ask the heavens!</label>
+      <input type="text" id="question" name="question" required />
+      <button type="submit">Shake</button>
+    </form>
+    <output id="answer"></output>
+    <audio id="audio" src="/static/mystic.wav"></audio>
+    <script type="module" src="/js/scripts.js"></script>
+  </body>
+</html>
